@@ -1,0 +1,5 @@
+1. Bellman Ford: https://www.javatpoint.com/bellman-ford-algorithm
+2. Control Abstraction [D&C] : https://myexperiencelive.wordpress.com/2017/03/11/84/
+3. Weighted interval Scheduling : https://www.javatpoint.com/activity-or-task-scheduling-problem
+4. https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
+5. 

@@ -1,0 +1,98 @@
+How to start working with back-end
+
+0. Download LTS version of node,js from the official website. Then restart the pc.
+
+1. Start with hyper terminal ..reach out to the particular directory.
+
+2. now you can create an index.js. Open the index,js in any editor. write few lines of JS codes. Save it.
+
+3.HyperTerminal mein : node index.js likhne se node uss file ko run kar dega.
+
+4. sirf node likh ke enter maarne se node ka khudka terminal open ho jaayega.
+
+>> wahaan kuchh  aisa show karne lagega.
+>> yahan se directly java ke code run kar sakte ho. like console.log(" Hellow World ! ");
+
+REPL
+
+node ke khud ke terminal ko repl boltein hain.. ref:Step-4.
+
+1. repl mein addition kar sakte ho...string print kar sakte ho..etc..
+
+2. koi bhi command aadha adhura likh ke agar tab press kar doge twice.. toh woh usse command se match karne waale baaki saare command dikha dega.
+
+3. to clear the complete terminal of all the previous commands.: clear --> enter.
+
+4. to exit the repl : ctrl+c twice./ .exit +enter.
+
+Using NPM (node package manager.)
+It uses prebuild module...which has some dependencies....and those depended packages too have some dependencies..
+
+1. HyperTerminal mein : npm init .
+
+now youll be asked dozens of stuff about your project . Fill it accordingly .
+
+2. after Step 1 , your current directory now has package..json file.
+
+3.json files carries all the details about... the packages you installed in your current directory
+
+4. go to npmjs.com.. youll find many packages .. use the install commannd of that module to install ho jaayega
+ 
+ ExpressJS
+
+1.  Create the server file inside the required directory.
+
+2. npm init ...in that directory.
+
+3.install express by : npm install express+ enter.
+
+4. Require function and port output specifier. inside the .js file inside the code editor.
+
+5.Setup home route "/" in the .js file.
+
+6. Setup more routes...as given below.
+
+  const express = require("express");
+  const app = express();
+
+  app.get("about", function(req, res){
+    res.send( "<h3><cent re><mark>Hello This Sunil Kumar .🎃.who are you ??</mark></centre></h3>")
+  });
+
+  app.get("/contact", function(req, res){
+    res.send( "<h3><cent re><mark>Hello This Sunil Kumar .🎃.who are you ??</mark></centre></h3>")
+  });
+
+  app.get("/exit", function(req, res){
+    res.send( "<h3><cent re><mark>Hello This Sunil Kumar .🎃.who are you ??</mark></centre></h3>")
+  });
+
+  app.get("/", function(req, res){
+    res.send( "<h3><cent re><mark>Hello This Sunil Kumar .🎃.who are you ??</mark></centre></h3>")
+  });
+
+  app.listen(1703, function(){
+    console.log("Server started on port 1703");
+  });
+
+Nodemon Installation.
+
+1. This helps us by auto restarting the server.
+2. Nodemon is just an extension which enables easy node workflow by monitoring the source codes and auto updating it when we save the files.
+
+To Install the Nodemon: 
+1. nodemon.io
+2. use Hyper Terminal to Install the nodemon.
+3. npm install -g nodemon.
+4.Once installed it will work for all the upcoming projects.
+5. Now everytime we press ctrl+s. The nodemon autoupdates it.
+
+
+Starting with Calculator Project.
+
+1. Reach the directory.
+2. npm init+ enter.
+3. npm install express+ enter
+4. Basic functionalitites of express in the calculator.js file
+5. The Express wont work via node, hence we will be using nodemon to access node now
+6. now simply instead of node , start using nodemon
